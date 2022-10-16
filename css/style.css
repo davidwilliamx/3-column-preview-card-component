@@ -13,3 +13,104 @@
 html {
     font-size: 15px;
 }
+body {
+    background-color: var(--very-light-gray);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0 24px;
+}
+.container article {
+    width: 308px;
+    padding: 48px;
+}
+.container article img {
+    margin-bottom: 35px;
+}
+.container article h1 {
+    font-size: 40px;
+    font-family: var(--font-t);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--very-light-gray);
+    margin-bottom: 25px;
+}
+.container article p {
+    font-size: 15px;
+    font-family: var(--font-p);
+    line-height: 25px;
+    font-weight: 400;
+    color: var(--transparent-white);
+    margin-bottom: 85px;
+}
+.container article input {
+    width: 146px;
+    height: 48px;
+    border: 0;
+    border-radius: 50px;
+    font-size: 15px;
+    font-family: var(--font-p);
+    cursor: pointer;
+}
+.container article input:hover {
+    background-color: transparent;
+    border: 2px solid var(--very-light-gray);
+    color: var(--very-light-gray);
+}
+
+.sedan {
+    background-color: var(--bright-orange);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.sedan input {
+    color: var(--bright-orange);
+}
+
+
+.suv {
+    background-color: var(--dark-cyan);
+}
+.suv input {
+    color: var(--dark-cyan);
+}
+
+
+.luxury {
+    background-color: var(--very-dark-cyan);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.luxury input {
+    color: var(--very-dark-cyan);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        margin: 88px 24px;
+    }
+    .container article {
+        width: 327px;
+    }
+    .container article p {
+        margin-bottom: 25px;
+    }
+    .sedan {
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0;
+    }
+    .luxury {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+}
+@media (max-width: 375px) {
+    .container {
+        margin: 88px 24px;
+    }
+}
