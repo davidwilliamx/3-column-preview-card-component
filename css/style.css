@@ -29,7 +29,7 @@ body {
 .container article img {
     margin-bottom: 2.3333333333333335rem;
 }
-.container article h1 {
+.container article h2 {
     font-size: 2.6666666666666665rem;
     font-family: var(--font-t);
     text-transform: uppercase;
@@ -53,6 +53,7 @@ body {
     font-size: 1rem;
     font-family: var(--font-p);
     cursor: pointer;
+    background-color: var(--transparent-white);
 }
 .container article input:hover {
     background-color: transparent;
@@ -87,7 +88,7 @@ body {
         margin: 5.866666666666666rem 1.6rem;
     }
     .container article {
-        width: 21.8rem;
+        width: 100%;
     }
     .container article p {
         margin-bottom: 1.6666666666666667rem;
@@ -100,10 +101,5 @@ body {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0.3333333333333333rem;
         border-bottom-left-radius: 0.3333333333333333rem;
-    }
-}
-@media (max-width: 375px) {
-    .container {
-        margin: 5.866666666666666rem 1.6rem;
     }
 }
